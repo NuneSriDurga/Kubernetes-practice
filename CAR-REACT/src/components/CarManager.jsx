@@ -18,7 +18,7 @@ const CarManager = () => {
   const [message, setMessage] = useState('');
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${config.url}/carapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL}/carapi`;
 
   useEffect(() => {
     fetchCars();
